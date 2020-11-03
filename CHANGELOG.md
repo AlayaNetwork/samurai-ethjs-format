@@ -66,13 +66,13 @@
 
 1. Handle the bad design caveit of tx or FilterChange result
 
-# 0.0.5 -- minor fix on eth_getCode
+# 0.0.5 -- minor fix on platon_getCode
 
-1. Minor fix on eth_getCode, requires 1 not 2 param length
+1. Minor fix on platon_getCode, requires 1 not 2 param length
 
-# 0.0.4 -- minor fix on eth_txCount..
+# 0.0.4 -- minor fix on platon_txCount..
 
-1. Minor fix on eth_getTransactionCount, required 2 instead of 1..
+1. Minor fix on platon_getTransactionCount, required 2 instead of 1..
 
 # 0.0.3 -- enforce input param requirements
 

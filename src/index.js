@@ -1,4 +1,4 @@
-const schema = require('ethjs-schema');
+const schema = require('@alayanetwork/ethjs-schema');
 const util = require('ethjs-util');
 const numberToBN = require('number-to-bn');
 const stripHexPrefix = require('strip-hex-prefix');
@@ -64,6 +64,10 @@ function formatQuantityOrTag(value, encode) {
 function formatData(value, byteLength) {
   var output = value; // eslint-disable-line
   var outputByteLength = 0; // eslint-disable-line
+
+  if (value != null && typeof output === 'string' && (output.startsWith('atx') || output.startsWith('atp'))) {
+    return output;
+  }
 
   // prefix only under strict conditions, else bypass
   if (typeof value === 'string') {

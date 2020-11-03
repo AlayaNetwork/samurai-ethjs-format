@@ -5,15 +5,15 @@ All information for developers using `ethjs-format` should consult this document
 ## Install
 
 ```
-npm install --save ethjs-format
+npm install --save @alayanetwork/ethjs-format
 ```
 
 ## Usage
 
 ```js
-const format = require('ethjs-format');
+const format = require('@alayanetwork/ethjs-format');
 
-const inputPayload = format.formatInputs('eth_sendTransaction', [{
+const inputPayload = format.formatInputs('platon_sendTransaction', [{
   "from": "0xb60e8dd61c5d32be8058bb8eb970870f07233155",
   "to": "0xd46e8dd67c5d32be8058bb8eb970870f07244567",
   "gas": new BigNumber("30400"), // 30400,
@@ -34,7 +34,7 @@ const inputPayload = format.formatInputs('eth_sendTransaction', [{
 }]
 */
 
-const outputPayload = format.formatOutputs('eth_sendTransaction', "0xe670ec64341771606e55d6b4ca35a1a6b75ee3d5145a99d05921026d1527331");
+const outputPayload = format.formatOutputs('platon_sendTransaction', "0xe670ec64341771606e55d6b4ca35a1a6b75ee3d5145a99d05921026d1527331");
 
 // result "0xe670ec64341771606e55d6b4ca35a1a6b75ee3d5145a99d05921026d1527331"
 ```
@@ -53,12 +53,12 @@ const outputPayload = format.formatOutputs('eth_sendTransaction', "0xe670ec64341
 
 ### Objects
 
-  Will encode complex RPC objects like the `eth_sendTransaction` input object structure `{from: ..., data: ..., gas: ...}` for RPC payloads. For complex objects, it also enforces by `throw` required fields such as `from` and `data` for the `eth_sendTransaction` input object.
+  Will encode complex RPC objects like the `platon_sendTransaction` input object structure `{from: ..., data: ..., gas: ...}` for RPC payloads. For complex objects, it also enforces by `throw` required fields such as `from` and `data` for the `platon_sendTransaction` input object.
 
   ```js
-  const format = require('ethjs-format');
+  const format = require('@alayanetwork/ethjs-format');
 
-  const inputPayload = format.formatInputs('eth_sendTransaction', [{
+  const inputPayload = format.formatInputs('platon_sendTransaction', [{
     "from": "0xb60e8dd61c5d32be8058bb8eb970870f07233155",
     "to": "0xd46e8dd67c5d32be8058bb8eb970870f07244567",
     "gas": new BigNumber("30400"), // 30400,
@@ -79,7 +79,7 @@ const outputPayload = format.formatOutputs('eth_sendTransaction', "0xe670ec64341
   }]
   */
 
-  const outputPayload = format.formatOutputs('eth_sendTransaction', "0xe670ec64341771606e55d6b4ca35a1a6b75ee3d5145a99d05921026d1527331");
+  const outputPayload = format.formatOutputs('platon_sendTransaction', "0xe670ec64341771606e55d6b4ca35a1a6b75ee3d5145a99d05921026d1527331");
 
   // result "0xe670ec64341771606e55d6b4ca35a1a6b75ee3d5145a99d05921026d1527331"
   ```
@@ -95,49 +95,49 @@ web3_sha3
 net_version
 net_peerCount
 net_listening
-eth_protocolVersion
-eth_syncing
-eth_coinbase
-eth_mining
-eth_hashrate
-eth_gasPrice
-eth_accounts
-eth_blockNumber
-eth_getBalance
-eth_getStorageAt
-eth_getTransactionCount
-eth_getBlockTransactionCountByHash
-eth_getBlockTransactionCountByNumber
-eth_getUncleCountByBlockHash
-eth_getUncleCountByBlockNumber
-eth_getCode
-eth_sign
-eth_sendTransaction
-eth_sendRawTransaction
-eth_call
-eth_estimateGas
-eth_getBlockByHash
-eth_getBlockByNumber
-eth_getTransactionByHash
-eth_getTransactionByBlockHashAndIndex
-eth_getTransactionByBlockNumberAndIndex
-eth_getTransactionReceipt
-eth_getUncleByBlockHashAndIndex
-eth_getUncleByBlockNumberAndIndex
-eth_getCompilers
-eth_compileLLL
-eth_compileSolidity
-eth_compileSerpent
-eth_newFilter
-eth_newBlockFilter
-eth_newPendingTransactionFilter
-eth_uninstallFilter
-eth_getFilterChanges
-eth_getFilterLogs
-eth_getLogs
-eth_getWork
-eth_submitWork
-eth_submitHashrate
+platon_protocolVersion
+platon_syncing
+platon_coinbase
+platon_mining
+platon_hashrate
+platon_gasPrice
+platon_accounts
+platon_blockNumber
+platon_getBalance
+platon_getStorageAt
+platon_getTransactionCount
+platon_getBlockTransactionCountByHash
+platon_getBlockTransactionCountByNumber
+platon_getUncleCountByBlockHash
+platon_getUncleCountByBlockNumber
+platon_getCode
+platon_sign
+platon_sendTransaction
+platon_sendRawTransaction
+platon_call
+platon_estimateGas
+platon_getBlockByHash
+platon_getBlockByNumber
+platon_getTransactionByHash
+platon_getTransactionByBlockHashAndIndex
+platon_getTransactionByBlockNumberAndIndex
+platon_getTransactionReceipt
+platon_getUncleByBlockHashAndIndex
+platon_getUncleByBlockNumberAndIndex
+platon_getCompilers
+platon_compileLLL
+platon_compileSolidity
+platon_compileSerpent
+platon_newFilter
+platon_newBlockFilter
+platon_newPendingTransactionFilter
+platon_uninstallFilter
+platon_getFilterChanges
+platon_getFilterLogs
+platon_getLogs
+platon_getWork
+platon_submitWork
+platon_submitHashrate
 db_putString
 db_getString
 db_putHex

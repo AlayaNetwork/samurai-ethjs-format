@@ -48,13 +48,13 @@ npm install --save ethjs-format
 ## Usage
 
 ```js
-const format = require('ethjs-format');
+const format = require('@alayanetwork/ethjs-format');
 
-const inputPayload = format.formatInputs('eth_getBalance', ["0x407d73d8a49eeb85d32cf465507dd71d507100c1", 405938494]);
+const inputPayload = format.formatInputs('platon_getBalance', ["0x407d73d8a49eeb85d32cf465507dd71d507100c1", 405938494]);
 
 // result ['0x407d73d8a49eeb85d32cf465507dd71d507100c1', '0x1832213E']
 
-const outputPayload = format.formatOutputs('eth_getBalance', "0x0234c8a3397aab58");
+const outputPayload = format.formatOutputs('platon_getBalance', "0x0234c8a3397aab58");
 
 // result <BigNumber ...>
 // result outputPayload.toString(10) 158972490234375000
@@ -72,49 +72,49 @@ web3_sha3
 net_version
 net_peerCount
 net_listening
-eth_protocolVersion
-eth_syncing
-eth_coinbase
-eth_mining
-eth_hashrate
-eth_gasPrice
-eth_accounts
-eth_blockNumber
-eth_getBalance
-eth_getStorageAt
-eth_getTransactionCount
-eth_getBlockTransactionCountByHash
-eth_getBlockTransactionCountByNumber
-eth_getUncleCountByBlockHash
-eth_getUncleCountByBlockNumber
-eth_getCode
-eth_sign
-eth_sendTransaction
-eth_sendRawTransaction
-eth_call
-eth_estimateGas
-eth_getBlockByHash
-eth_getBlockByNumber
-eth_getTransactionByHash
-eth_getTransactionByBlockHashAndIndex
-eth_getTransactionByBlockNumberAndIndex
-eth_getTransactionReceipt
-eth_getUncleByBlockHashAndIndex
-eth_getUncleByBlockNumberAndIndex
-eth_getCompilers
-eth_compileLLL
-eth_compileSolidity
-eth_compileSerpent
-eth_newFilter
-eth_newBlockFilter
-eth_newPendingTransactionFilter
-eth_uninstallFilter
-eth_getFilterChanges
-eth_getFilterLogs
-eth_getLogs
-eth_getWork
-eth_submitWork
-eth_submitHashrate
+platon_protocolVersion
+platon_syncing
+platon_coinbase
+platon_mining
+platon_hashrate
+platon_gasPrice
+platon_accounts
+platon_blockNumber
+platon_getBalance
+platon_getStorageAt
+platon_getTransactionCount
+platon_getBlockTransactionCountByHash
+platon_getBlockTransactionCountByNumber
+platon_getUncleCountByBlockHash
+platon_getUncleCountByBlockNumber
+platon_getCode
+platon_sign
+platon_sendTransaction
+platon_sendRawTransaction
+platon_call
+platon_estimateGas
+platon_getBlockByHash
+platon_getBlockByNumber
+platon_getTransactionByHash
+platon_getTransactionByBlockHashAndIndex
+platon_getTransactionByBlockNumberAndIndex
+platon_getTransactionReceipt
+platon_getUncleByBlockHashAndIndex
+platon_getUncleByBlockNumberAndIndex
+platon_getCompilers
+platon_compileLLL
+platon_compileSolidity
+platon_compileSerpent
+platon_newFilter
+platon_newBlockFilter
+platon_newPendingTransactionFilter
+platon_uninstallFilter
+platon_getFilterChanges
+platon_getFilterLogs
+platon_getLogs
+platon_getWork
+platon_submitWork
+platon_submitHashrate
 db_putString
 db_getString
 db_putHex
@@ -156,7 +156,7 @@ There is always a lot of work to do, and will have many rules to maintain. So pl
 
 Please consult our [Code of Conduct](CODE_OF_CONDUCT.md) docs before helping out.
 
-We communicate via [issues](https://github.com/ethjs/ethjs-format/issues) and [pull requests](https://github.com/ethjs/ethjs-format/pulls).
+We communicate via [issues](https://github.com/AlayaNetwork/samurai-ethjs-format/issues) and [pull requests](https://github.com/AlayaNetwork/samurai-ethjs-format/pulls).
 
 ## Important documents
 

@@ -1,4 +1,4 @@
- /* eslint-disable */ 
+ /* eslint-disable */
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
 		module.exports = factory();
@@ -5609,41 +5609,41 @@ module.exports = {
 			"D20",
 			2
 		],
-		"eth_protocolVersion": [
+		"platon_protocolVersion": [
 			[],
 			"S"
 		],
-		"eth_syncing": [
+		"platon_syncing": [
 			[],
 			"B|EthSyncing"
 		],
-		"eth_coinbase": [
+		"platon_coinbase": [
 			[],
 			"D20"
 		],
-		"eth_mining": [
+		"platon_mining": [
 			[],
 			"B"
 		],
-		"eth_hashrate": [
+		"platon_hashrate": [
 			[],
 			"Q"
 		],
-		"eth_gasPrice": [
+		"platon_gasPrice": [
 			[],
 			"Q"
 		],
-		"eth_accounts": [
+		"platon_accounts": [
 			[],
 			[
 				"D20"
 			]
 		],
-		"eth_blockNumber": [
+		"platon_blockNumber": [
 			[],
 			"Q"
 		],
-		"eth_getBalance": [
+		"platon_getBalance": [
 			[
 				"D20",
 				"Q|T"
@@ -5652,7 +5652,7 @@ module.exports = {
 			1,
 			2
 		],
-		"eth_getStorageAt": [
+		"platon_getStorageAt": [
 			[
 				"D20",
 				"Q",
@@ -5662,7 +5662,7 @@ module.exports = {
 			2,
 			2
 		],
-		"eth_getTransactionCount": [
+		"platon_getTransactionCount": [
 			[
 				"D20",
 				"Q|T"
@@ -5671,35 +5671,35 @@ module.exports = {
 			1,
 			2
 		],
-		"eth_getBlockTransactionCountByHash": [
+		"platon_getBlockTransactionCountByHash": [
 			[
 				"D32"
 			],
 			"Q",
 			1
 		],
-		"eth_getBlockTransactionCountByNumber": [
+		"platon_getBlockTransactionCountByNumber": [
 			[
 				"Q|T"
 			],
 			"Q",
 			1
 		],
-		"eth_getUncleCountByBlockHash": [
+		"platon_getUncleCountByBlockHash": [
 			[
 				"D32"
 			],
 			"Q",
 			1
 		],
-		"eth_getUncleCountByBlockNumber": [
+		"platon_getUncleCountByBlockNumber": [
 			[
 				"Q"
 			],
 			"Q",
 			1
 		],
-		"eth_getCode": [
+		"platon_getCode": [
 			[
 				"D20",
 				"Q|T"
@@ -5708,7 +5708,7 @@ module.exports = {
 			1,
 			2
 		],
-		"eth_sign": [
+		"platon_sign": [
 			[
 				"D20",
 				"D"
@@ -5716,7 +5716,7 @@ module.exports = {
 			"D",
 			2
 		],
-		"eth_signTypedData": [
+		"platon_signTypedData": [
 			[
 				"Array|DATA",
 				"D20"
@@ -5724,21 +5724,21 @@ module.exports = {
 			"D",
 			1
 		],
-		"eth_sendTransaction": [
+		"platon_sendTransaction": [
 			[
 				"SendTransaction"
 			],
 			"D",
 			1
 		],
-		"eth_sendRawTransaction": [
+		"platon_sendRawTransaction": [
 			[
 				"D"
 			],
 			"D32",
 			1
 		],
-		"eth_call": [
+		"platon_call": [
 			[
 				"CallTransaction",
 				"Q|T"
@@ -5747,7 +5747,7 @@ module.exports = {
 			1,
 			2
 		],
-		"eth_estimateGas": [
+		"platon_estimateGas": [
 			[
 				"EstimateTransaction",
 				"Q|T"
@@ -5755,7 +5755,7 @@ module.exports = {
 			"Q",
 			1
 		],
-		"eth_getBlockByHash": [
+		"platon_getBlockByHash": [
 			[
 				"D32",
 				"B"
@@ -5763,7 +5763,7 @@ module.exports = {
 			"Block",
 			2
 		],
-		"eth_getBlockByNumber": [
+		"platon_getBlockByNumber": [
 			[
 				"Q|T",
 				"B"
@@ -5771,14 +5771,14 @@ module.exports = {
 			"Block",
 			2
 		],
-		"eth_getTransactionByHash": [
+		"platon_getTransactionByHash": [
 			[
 				"D32"
 			],
 			"Transaction",
 			1
 		],
-		"eth_getTransactionByBlockHashAndIndex": [
+		"platon_getTransactionByBlockHashAndIndex": [
 			[
 				"D32",
 				"Q"
@@ -5786,7 +5786,7 @@ module.exports = {
 			"Transaction",
 			2
 		],
-		"eth_getTransactionByBlockNumberAndIndex": [
+		"platon_getTransactionByBlockNumberAndIndex": [
 			[
 				"Q|T",
 				"Q"
@@ -5794,14 +5794,14 @@ module.exports = {
 			"Transaction",
 			2
 		],
-		"eth_getTransactionReceipt": [
+		"platon_getTransactionReceipt": [
 			[
 				"D32"
 			],
 			"Receipt",
 			1
 		],
-		"eth_getUncleByBlockHashAndIndex": [
+		"platon_getUncleByBlockHashAndIndex": [
 			[
 				"D32",
 				"Q"
@@ -5809,7 +5809,7 @@ module.exports = {
 			"Block",
 			1
 		],
-		"eth_getUncleByBlockNumberAndIndex": [
+		"platon_getUncleByBlockNumberAndIndex": [
 			[
 				"Q|T",
 				"Q"
@@ -5817,56 +5817,56 @@ module.exports = {
 			"Block",
 			2
 		],
-		"eth_getCompilers": [
+		"platon_getCompilers": [
 			[],
 			[
 				"S"
 			]
 		],
-		"eth_compileLLL": [
+		"platon_compileLLL": [
 			[
 				"S"
 			],
 			"D",
 			1
 		],
-		"eth_compileSolidity": [
+		"platon_compileSolidity": [
 			[
 				"S"
 			],
 			"D",
 			1
 		],
-		"eth_compileSerpent": [
+		"platon_compileSerpent": [
 			[
 				"S"
 			],
 			"D",
 			1
 		],
-		"eth_newFilter": [
+		"platon_newFilter": [
 			[
 				"Filter"
 			],
 			"Q",
 			1
 		],
-		"eth_newBlockFilter": [
+		"platon_newBlockFilter": [
 			[],
 			"Q"
 		],
-		"eth_newPendingTransactionFilter": [
+		"platon_newPendingTransactionFilter": [
 			[],
 			"Q"
 		],
-		"eth_uninstallFilter": [
+		"platon_uninstallFilter": [
 			[
 				"QP"
 			],
 			"B",
 			1
 		],
-		"eth_getFilterChanges": [
+		"platon_getFilterChanges": [
 			[
 				"QP"
 			],
@@ -5875,7 +5875,7 @@ module.exports = {
 			],
 			1
 		],
-		"eth_getFilterLogs": [
+		"platon_getFilterLogs": [
 			[
 				"QP"
 			],
@@ -5884,7 +5884,7 @@ module.exports = {
 			],
 			1
 		],
-		"eth_getLogs": [
+		"platon_getLogs": [
 			[
 				"Filter"
 			],
@@ -5893,13 +5893,13 @@ module.exports = {
 			],
 			1
 		],
-		"eth_getWork": [
+		"platon_getWork": [
 			[],
 			[
 				"D"
 			]
 		],
-		"eth_submitWork": [
+		"platon_submitWork": [
 			[
 				"D",
 				"D32",
@@ -5908,7 +5908,7 @@ module.exports = {
 			"B",
 			3
 		],
-		"eth_submitHashrate": [
+		"platon_submitHashrate": [
 			[
 				"D",
 				"D"
@@ -6313,6 +6313,10 @@ function formatQuantityOrTag(value, encode) {
 function formatData(value, byteLength) {
   var output = value; // eslint-disable-line
   var outputByteLength = 0; // eslint-disable-line
+
+  if (value != null && typeof output === 'string' && (output.startsWith('atx') || output.startsWith('atp'))) {
+    return output;
+  }
 
   // prefix only under strict conditions, else bypass
   if (typeof value === 'string') {
