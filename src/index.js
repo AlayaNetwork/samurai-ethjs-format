@@ -1,5 +1,6 @@
 const schema = require('@alayanetwork/ethjs-schema');
 const util = require('ethjs-util');
+const ethUtil = require('@alayanetwork/ethereumjs-util')
 const numberToBN = require('number-to-bn');
 const stripHexPrefix = require('strip-hex-prefix');
 const BN = require('bn.js');
@@ -65,7 +66,7 @@ function formatData(value, byteLength) {
   var output = value; // eslint-disable-line
   var outputByteLength = 0; // eslint-disable-line
 
-  if (value != null && typeof output === 'string' && (output.startsWith('atx') || output.startsWith('atp'))) {
+  if (value != null && typeof output === 'string' && ethUtil.isBech32Address(output)) {
     return output;
   }
 
