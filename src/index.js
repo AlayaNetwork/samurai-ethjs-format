@@ -1,6 +1,6 @@
 const schema = require('@alayanetwork/ethjs-schema');
 const util = require('ethjs-util');
-const ethUtil = require('@alayanetwork/ethereumjs-util')
+const ethUtil = require('@alayanetwork/ethereumjs-util');
 const numberToBN = require('number-to-bn');
 const stripHexPrefix = require('strip-hex-prefix');
 const BN = require('bn.js');
